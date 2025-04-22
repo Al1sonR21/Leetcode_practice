@@ -12,12 +12,12 @@ This repository contains my solutions to various LeetCode problems, along with e
 
 ## 📂 Repository Structure  
 ```  
-Leetcode_practice/  <br> 
-├── Easy/  <br> 
-│   ├── Problem_Name/ <br> 
-│   │   ├── problem <br> 
-│   │   ├── solution.py  <br> 
-├── Medium/  <br> 
-├── Hard/  <br> 
-└── README.md (this file)  <br> 
+Leetcode_practice/ 
+├── Easy/  
+│   ├── Problem_Name/ 
+│   │   ├── problem 
+│   │   ├── solution.py  
+├── Medium/  
+├── Hard/  
+└── README.md (this file)  
 ```  
