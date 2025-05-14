@@ -12,10 +12,16 @@ class Solution:
                     return [i,j]
 
 
-# Test parameters
-param_1 = [3,3]
-param_2 = 6
 
-# Test
+# Test------------------------------------------------------
+
 objeto = Solution()
-print(objeto.twoSum(param_1, param_2))
+for i in range(3):
+    case = {0: [2, 7, 11, 15], 1: [3,2 , 4], 2: [3,3]}
+    targets = {0: 9,  1: 6, 2:6 }
+    solutions = {0: [0, 1], 1: [1, 2], 2: [0, 1]}
+    if objeto.twoSum(case[i], targets[i]) == solutions[i]:
+        print(f"Test{i}: Accepted ")
+    else:
+         print("Tste + {i}: Failed")
+    print(f"Output: {objeto.twoSum(case[i], targets[i])} \nExpected {solutions[i]} \n")
