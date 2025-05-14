@@ -1,3 +1,11 @@
+############################################################################################################################
+# Two sum:                                                                                                                 #
+# Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target #
+# You may assume that each input would have exactly one solution, and you may not use the same element twice. You can      #
+# the answer in any order.                                                                                                 #
+# Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?                                    #
+############################################################################################################################
+
 from typing import List
 
 class Solution:
@@ -7,7 +15,7 @@ class Solution:
         # Make other iteration to add element to the list and compare if it is equal to target
             for j in range(len(nums)):
                 try_traget = nums[i] + nums[j]
-                if try_traget == target and i != j :
+                if try_traget == target and i != j :  
                     # Save the items in one array
                     return [i,j]
 
