@@ -14,9 +14,7 @@ This repository contains my solutions to various LeetCode problems, along with e
 ```  
 Leetcode_practice/ 
 ├── Easy/  
-│   ├── Problem_Name/ 
-│   │   ├── problem 
-│   │   ├── solution.py  
+│   ├── solution.py  
 ├── Medium/  
 ├── Hard/  
 └── README.md (this file)  
