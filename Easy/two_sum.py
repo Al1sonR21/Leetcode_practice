@@ -10,16 +10,17 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # Iterates the array
-        for i in range(len(nums)):
-        # Make other iteration to add element to the list and compare if it is equal to target
-            for j in range(len(nums)):
-                try_traget = nums[i] + nums[j]
-                if try_traget == target and i != j :  
-                    # Save the items in one array
-                    return [i,j]
-
-
+     # Map the numbers in the array with a hash
+     elements = {}
+     # Iterate the array to compute the complement
+     for i in range(len(nums)):
+        complement = target - nums[i]
+        # Evaluate if the complement is at the array
+        if complement in elements:
+            return [elements[complement],i] # Return if it id found
+        else:
+            elements[nums[i]] = i # If it is not almacenated
+    
 
 # Test------------------------------------------------------
 
@@ -28,7 +29,7 @@ for i in range(3):
     case = {0: [2, 7, 11, 15], 1: [3,2 , 4], 2: [3,3]}
     targets = {0: 9,  1: 6, 2:6 }
     solutions = {0: [0, 1], 1: [1, 2], 2: [0, 1]}
-    if objeto.twoSum(case[i], targets[i]) == solutions[i]:
+    if objeto.twoSum(case[i], targets[i]) == solutions[i] :
         print(f"Test{i}: Accepted ")
     else:
          print("Tste + {i}: Failed")
